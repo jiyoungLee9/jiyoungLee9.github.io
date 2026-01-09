@@ -1,4 +1,23 @@
-# AI-assisted UI Learning Log
+# LLM AI를 활용하여 UI개발 배우기
 
-This is a quiet public work journal.
-Focused on learning UI development with LLM tools.
+jsp/jquery 기반의 웹퍼블리셔가 LLM AI를 통해서만 SPA(React) 가반에서 UI개발을 학습하는 기록일지입니다.
+
+## 진행개요
+- (대상자) : 20년 UIUX실무자 (UX설계, UI디자인, jsp,jquery 기반에서 다양한 UI library, UI platform 을 통한 공통UI개발)
+- (일정) : 약 2개월 (사전 셋팅 별도)
+- (활용AI) : Google Gemini (주력), ChatGPT, Claude
+- (학습정리) : Notion (추후 공개 예정)
+- (기타) : 대화 중 필요한 부분 발췌 공유
+
+## 서문
+이 기록일지는 학습기록도 있겠지만, 기존에 온/오프라인을 통해 배웠던 방식에서 대화를 통한 AI로만 학습 가능여부도 알고 싶었습니다.
+실무자 입장에서 이러한 학습이 진짜 활용이 가능한지, 사람이나 책이 아닌 AI를 통한 학습 중 느끼는 점들을 기록하고 싶었습니다.
+Google Gemini를 주력으로 진행되지만, 필요에 따라 여러 AI모델을 수시로 사용하였습니다.
+
+## 기록일지
+[- 2025-12-30 학습계획을 세워보자](./logs/20251230.md)
+[- 2025-12-31 환경셋팅](./logs/20251231.md)
+[- 2026-01-04 Gemini 선생님](./logs/20260104.md)
+[- 2026-01-05 SPA개념](./logs/20260105.md)
+[- 2026-01-07 일지를 써야 겠어](./logs/20260107.md)
+
