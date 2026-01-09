@@ -3,7 +3,7 @@
 jsp/jquery 기반의 웹퍼블리셔가 LLM AI를 통해서만 SPA(React) 가반에서 UI개발을 학습하는 기록일지입니다.
 
 ## 진행개요
-- (대상자) : jsp/jquery 기반 웹퍼블리셔 (UX설계, UI디자인, jsp,jquery 기반에서 다양한 UI library, UI platform 을 통한 공통UI개발)
+- (대상자) : jsp/jquery 기반 웹퍼블리셔 (UX설계, UI디자인, HTML/CSS/JS 외에 다양한 UI library, UI platform 을 통한 공통UI개발)
 - (일정) : 약 2개월 (사전 셋팅 별도)
 - (활용AI) : Google Gemini (주력), ChatGPT, Claude
 - (학습정리) : Notion (추후 공개 예정)
