@@ -23,4 +23,5 @@ Google Gemini를 주력으로 진행되지만, 필요에 따라 여러 AI모델�
 - [2026-01-15 style입히기-기본](./logs/20260115.md) <br/>
 - [2026-01-16 style입히기-css library](./logs/20260116.md) <br/>
 - [2026-01-20 UI컴포넌트-figma생성](./logs/20260120.md) <br/>
+- [2026-01-21 UI컴포넌트-반복list 그리고 className](./logs/20260121.md) <br/>
 
