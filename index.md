@@ -25,4 +25,5 @@ Google Gemini를 주력으로 진행되지만, 필요에 따라 여러 AI모델�
 - [2026-01-20 UI컴포넌트-figma생성](./logs/20260120.md) <br/>
 - [2026-01-21 UI컴포넌트-반복list 그리고 className](./logs/20260121.md) <br/>
 - [2026-01-23 ai를 통한 점검](./logs/20260123.md) <br/>
+- [2026-01-27 storybook 도입](./logs/20260127.md) <br/>
 
