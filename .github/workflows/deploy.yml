@@ -1,0 +1,42 @@
+name: Deploy Portfolio
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: portfolio/package-lock.json
+
+      - name: Install dependencies
+        run: |
+          cd portfolio
+          npm ci
+
+      - name: Build
+        run: |
+          cd portfolio
+          npm run build
+
+      - name: Copy react_learning_log into docs
+        run: |
+          cp -r react_learning_log docs/react_learning_log
+
+      - name: Commit & Push docs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git diff --cached --quiet || git commit -m "chore: deploy portfolio [skip ci]"
+          git push
