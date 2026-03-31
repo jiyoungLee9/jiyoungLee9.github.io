@@ -2,7 +2,8 @@ import { NavLink } from 'react-router-dom'
 import styles from './Header.module.scss'
 
 const NAV_ITEMS = [
-  { label: 'About Me',          path: '/' },
+  { label: 'Home',          path: '/' },
+  { label: 'About Me',          path: '/about-me' },
   { label: 'Skills & Expertise', path: '/skills' },
   { label: 'Works',             path: '/works' },
   { label: 'Philosophy',        path: '/philosophy' },

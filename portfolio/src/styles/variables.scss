@@ -1,10 +1,141 @@
+@charset "utf-8";
 
+// =============================================================================
 // portfolio/src/styles/variables.scss
+// Design Tokens — jiyoungLee9.github.io Portfolio
+// =============================================================================
 
-// 포트폴리오 전역 변수
-$color-primary: #0070f3;
-$color-text: #1a1a1a;
-$color-bg: #ffffff;
-$font-base: 'Pretendard', sans-serif;
-$breakpoint-md: 768px;
-$breakpoint-lg: 1280px;
+// -----------------------------------------------------------------------------
+// COLOR
+// -----------------------------------------------------------------------------
+
+// Brand Red Scale
+$color-red-900:       #D00003;   // 가장 진한 다크 레드 (우측 끝 블록)
+$color-red-700:       #FD4649;   // 메인 레드 (포인트, 제목, 섹션 타이틀)
+$color-red-500:       #FDEFF2;   // 미디엄 레드 (배경2)
+$color-red-300:       #FFF8F8;   // 라이트 레드 (배경1)
+
+// Semantic Color
+$color-primary:       $color-red-700;   // 섹션 타이틀, 강조 텍스트, 포인트
+$color-accent:        $color-red-900;   // 버튼 border, hover, 인터랙션
+$color-highlight:     $color-red-700;   // 인라인 강조 텍스트 (About Me 본문)
+
+// Neutral
+$color-white:         #FFFFFF;
+$color-black:         #000000;
+$color-gray-900:      #000000;   // 본문 기본 텍스트
+$color-gray-700:      #333333;   // 소제목, 목록 텍스트
+$color-gray-500:      #515151;   // 보조 텍스트, 설명
+$color-gray-300:      #D9D9D9;   // 구분선 (About Me 섹션 divider)
+$color-gray-100:      #FAFAFA;   // 배경 보조
+
+// Background
+$color-bg:            $color-white;
+$color-bg-card:       $color-white;
+
+// Text
+$color-text-primary:  $color-gray-900;
+$color-text-secondary:$color-gray-700;
+$color-text-accent:   $color-primary;
+$color-text-on-dark:  $color-black;
+
+// Border
+$color-border:        $color-gray-300;
+$color-border-btn:    $color-red-500;
+
+
+// -----------------------------------------------------------------------------
+// TYPOGRAPHY
+// -----------------------------------------------------------------------------
+
+// Font Family
+// — Hero 제목: 영문 Bold (이미지 기준 두꺼운 Montserrat, sans-serif )
+// — 본문 한글: Pretendard 또는 Noto Sans KR
+$font-family-base:    'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-family-en:      'Montserrat', 'Inter', sans-serif;  
+
+// Font Size Scale
+$font-size-xs:        1.2rem;   // 캡션, copyright (footer)
+$font-size-sm:        1.4rem;   // 보조 설명, 리스트 소항목
+$font-size-base:      1.6rem;   // 본문 기본
+$font-size-md:        1.8rem;   // 소제목, 리스트 제목 (Skills 섹션 항목)
+$font-size-lg:        2.0rem;   // 서브 헤딩
+$font-size-xl:        2.4rem;   // 섹션 부제목 (About Me 본문 첫줄)
+$font-size-2xl:       3.2rem;   // 페이지 서브 헤딩 (About Me H2)
+$font-size-3xl:       4.8rem;   // 섹션 타이틀 후보
+$font-size-hero:      7.2rem;   // Hero 메인 타이틀 (Deep Dive. / Clear Context.)
+
+// Font Weight
+$font-weight-regular: 400;
+$font-weight-medium:  500;
+$font-weight-semibold:600;
+$font-weight-bold:    700;
+$font-weight-black:   900;   // Hero 타이틀 (Deep Dive.)
+
+// Line Height
+$line-height-tight:   1.2;   // Hero 타이틀
+$line-height-base:    1.5;   // 본문
+$line-height-loose:   1.8;   // 긴 본문 단락
+
+
+// -----------------------------------------------------------------------------
+// SPACING
+// -----------------------------------------------------------------------------
+
+// Base unit: 4px
+$spacing-1:    0.4rem;
+$spacing-2:    0.8rem;
+$spacing-3:    1.2rem;
+$spacing-4:    1.6rem;
+$spacing-5:    2.0rem;
+$spacing-6:    2.4rem;
+$spacing-8:    3.2rem;
+$spacing-10:   4.0rem;
+$spacing-12:   4.8rem;
+$spacing-16:   6.4rem;
+$spacing-20:   8.0rem;
+$spacing-24:   9.6rem;
+$spacing-32:  12.8rem;
+
+// Semantic Spacing
+$spacing-section-y:   $spacing-20;   // 섹션 상하 여백 (페이지 간 구분)
+$spacing-section-x:   $spacing-12;   // 섹션 좌우 여백
+$spacing-content-gap: $spacing-8;    // 콘텐츠 블록 간 간격
+$spacing-item-gap:    $spacing-6;    // 리스트 아이템 간격 (Skills 목록)
+$spacing-text-gap:    $spacing-4;    // 텍스트 요소 간격 (제목-본문)
+$spacing-inline-gap:  $spacing-2;    // 인라인 요소 간격
+
+
+// -----------------------------------------------------------------------------
+// LAYOUT
+// -----------------------------------------------------------------------------
+
+// Container
+$container-max-width: 1280px;
+$container-padding-x: $spacing-12;   // 좌우 패딩
+
+// Grid
+$grid-columns:        12;
+$grid-gap:            $spacing-6;    // 컬럼 간격
+
+// Nav
+$nav-height:          60px;          // GNB 높이
+$nav-padding-x:       $spacing-8;
+$nav-gap:             $spacing-10;   // 메뉴 아이템 간격
+
+
+// -----------------------------------------------------------------------------
+// BORDER
+// -----------------------------------------------------------------------------
+
+$border-width:        0.1rem;
+$border-width-md:     0.2rem;
+$border-radius-sm:    0.4rem;
+$border-radius-md:    0.8rem;
+$border-radius-lg:    1.6rem;
+$border-radius-full:  9999px;
+
+// Button border
+$btn-border-width:    $border-width;
+$btn-border-color:    $color-border-btn;
+$btn-border-radius:   $border-radius-sm;

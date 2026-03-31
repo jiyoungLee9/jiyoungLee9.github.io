@@ -12,10 +12,11 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use "${
-          path.resolve(__dirname, 'src/styles/variables').replace(/\\/g, '/')
-        }" as *;`
+        additionalData: [
+          `@use "${path.resolve(__dirname, 'src/styles/_font').replace(/\\/g, '/')}" as *;`,
+          `@use "${path.resolve(__dirname, 'src/styles/variables').replace(/\\/g, '/')}" as *;`,
+        ].join('\n')
       }
     }
-  }
+  },
 })
