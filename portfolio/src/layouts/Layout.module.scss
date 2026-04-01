@@ -8,15 +8,25 @@
 @media (min-width:1440px) { /* pc wide */ 
     .wrap {
         min-width:140.0rem;
-        padding-left:2.0rem;
-        padding-left:2.0rem;
+        padding-left:$spacing-6;
+        padding-right:$spacing-6;
         margin:0 auto;
     }
 }
 @media (max-width:1439px) {/* pc wide 이하 */ 
+    html {        
+        overflow-x: hidden;
+    }
     .wrap {
-        padding-left:2.0rem;
-        padding-right:2.0rem;
+        padding-left:$spacing-6;
+        padding-right:$spacing-6;
+        margin:0 auto;
+    }    
+}
+
+@media (max-width:767px) {/* mobile 이하 */ 
+    .wrap {
+        padding:0;
     }    
 }
 

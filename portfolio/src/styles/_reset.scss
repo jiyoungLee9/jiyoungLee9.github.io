@@ -27,3 +27,4 @@ body { letter-spacing:0; }
 a, a:focus, a:hover {text-decoration:none; outline-color: #000;}
 a, button {cursor:pointer;}
 a:hover, a:focus, button:hover, button:focus {cursor:pointer;}
+button { border:0 none; margin:0; padding:0; background-color: inherit;}
