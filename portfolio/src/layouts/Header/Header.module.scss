@@ -116,7 +116,7 @@ $m_ico_close : "data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36
 @media (min-width:768px) and (max-width:1024px) { 
     .header {
         .list {            
-            gap: 0 $spacing-8;
+            gap: 0 $spacing-6;
         }   
         .header_menu {
             &.is_view {

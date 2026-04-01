@@ -1,8 +1,10 @@
 .wrap {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;     
     width:100%;    
-    min-height: 100vh;
+    height:100%;
 }
 
 @media (min-width:1440px) { /* pc wide */ 
@@ -13,10 +15,7 @@
         margin:0 auto;
     }
 }
-@media (max-width:1439px) {/* pc wide 이하 */ 
-    html {        
-        overflow-x: hidden;
-    }
+@media (max-width:1439px) {/* pc wide 이하 */     
     .wrap {
         padding-left:$spacing-6;
         padding-right:$spacing-6;
@@ -31,7 +30,8 @@
 }
 
 .main {
-    flex: 1;
+    flex: 1 1 auto;
+    overflow: auto;
 }
 
 //반응형 정의

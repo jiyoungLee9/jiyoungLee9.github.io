@@ -14,8 +14,9 @@
 /* mobile */
 @media (max-width:767px) {
     .footer {
+        padding-left:$spacing-6;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: flex-start;
     }    
 }
