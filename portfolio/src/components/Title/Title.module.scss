@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+// =============================================================================
+// src/components/Title/Title.module.scss
+// Title 공통 컴포넌트 스타일 — @mixin page-tit 기준
+// =============================================================================
+
+.title {
+    @include page-tit;  // variables.scss 의 page-tit mixin 적용
+}

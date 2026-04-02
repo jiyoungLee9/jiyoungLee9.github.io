@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+// =============================================================================
+// src/pages/Skills/Skills.module.scss
+// Skills & Expertise 페이지 전용 스타일
+// =============================================================================
+
+.skills {
+
+}
+
+// 반응형 정의
+@media (min-width:1440px) { /* pc wide */ }
+@media (min-width:1025px) and (max-width:1439px) { /* pc */ }
+@media (min-width:768px) and (max-width:1024px) { /* tablet */ }
+@media (max-width:767px) { /* mobile */ }

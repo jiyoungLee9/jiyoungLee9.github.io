@@ -139,3 +139,14 @@ $border-radius-full:  9999px;
 $btn-border-width:    $border-width;
 $btn-border-color:    $color-border-btn;
 $btn-border-radius:   $border-radius-sm;
+
+// -----------------------------------------------------------------------------
+// TITLE
+// -----------------------------------------------------------------------------
+@mixin page-tit {
+    font-family: $font-family-en;    
+    font-size:$font-size-xl;
+    font-weight: $font-weight-bold;
+    line-height:$line-height-base;
+    color:$color-red-700;
+}

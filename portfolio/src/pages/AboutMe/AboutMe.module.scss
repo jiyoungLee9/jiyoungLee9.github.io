@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+// =============================================================================
+// src/pages/AboutMe/AboutMe.module.scss
+// About Me 페이지 전용 스타일
+// =============================================================================
+
+.main_about_me {
+    padding-right:30.0rem;
+}
+.heading {
+    display:block;
+    margin-top:2.0rem;
+}
+
+// 반응형 정의
+@media (min-width:1440px) { /* pc wide */ }
+@media (min-width:1025px) and (max-width:1439px) { /* pc */ }
+@media (min-width:768px) and (max-width:1024px) { /* tablet */ }
+@media (max-width:767px) { /* mobile */ }
