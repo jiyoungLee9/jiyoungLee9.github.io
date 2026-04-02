@@ -1,10 +1,11 @@
 // portfolio/src/pages/Works/Works.jsx
 import styles from './Works.module.scss'
+import Title from '../../components/Title/Title'
 
 const Works = () => {
   return (
     <section className={styles.works}>
-      <h2>Works</h2>
+      <Title label="Works" className={styles.heading} />
       {/* 콘텐츠 추후 작성 */}
     </section>
   )
