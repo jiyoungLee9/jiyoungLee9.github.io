@@ -4,7 +4,7 @@ import Title from '../../components/Title/Title'
 
 const Philosophy = () => {
   return (
-    <section className={styles.philosophy}>
+    <section className={styles.main_philosophy}>
       <Title label="Philosophy" className={styles.heading} />
       {/* 콘텐츠 추후 작성 */}
     </section>

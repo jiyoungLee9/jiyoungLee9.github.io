@@ -13,6 +13,37 @@
     margin-top:2.0rem;
 }
 
+.page_main_title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;    
+    width:100%;
+    margin-top:$spacing-6;
+    gap : 0 0.8rem;
+
+    & > * {
+        font-family: $font-family-base;
+    }
+
+    .tit_strong {
+        font-size: $font-size-xl;
+        line-height: $line-height-tight;
+        font-weight: $font-weight-bold;
+        color:$color-gray-900;
+    }
+    .tit_info {
+        font-size: $font-size-md;
+        line-height: $line-height-base;
+        font-weight: $font-weight-regular;
+        color:$color-gray-900;
+        strong {
+            font-weight: $font-weight-bold;
+            color:$color-primary;
+        }
+    }
+}
+
 // 반응형 정의
 @media (min-width:1440px) { /* pc wide */ }
 @media (min-width:1025px) and (max-width:1439px) { /* pc */ }
