@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/',
   build: {
     outDir: '../docs',
-    emptyOutDir: true,
+    emptyOutDir: false,  // docs/ 하위의 react_learning_log 등 별도 관리 폴더 보존
   },
   css: {
     preprocessorOptions: {
