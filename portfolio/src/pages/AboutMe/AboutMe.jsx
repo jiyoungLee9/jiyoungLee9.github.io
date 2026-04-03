@@ -23,15 +23,15 @@ const AboutMe = () => {
         <strong className={styles.tit}>Core Expertise & Transition</strong>
         <ol className={styles.list}>
           <li>
-            <strong className={styles.item_tit}>통합적 UI 설계</strong>
+            <strong className={styles.item_tit}>1. 통합적 UI 설계</strong>
             <p className={styles.item_desc}>JSP/jQuery 환경의 풍부한 경험을 바탕으로, 복잡한 UI를 효율적인 React 컴포넌트 구조로 재정의(Redefine)합니다.</p>
           </li>
           <li>
-            <strong className={styles.item_tit}>웹 접근성 & 시맨틱 마크업</strong>
+            <strong className={styles.item_tit}>2. 웹 접근성 & 시맨틱 마크업</strong>
             <p className={styles.item_desc}>단순한 구현을 넘어 보편적 사용자 경험을 위한 표준 준수를 원칙으로 합니다.</p>
           </li>
           <li>
-            <strong className={styles.item_tit}>유지보수 지향적 코드</strong>
+            <strong className={styles.item_tit}>3. 유지보수 지향적 코드</strong>
             <p className={styles.item_desc}>"내 것이 아닌 코드는 없다"는 책임감으로, 동료 개발자가 활용하기 좋고 확장이 용이한 구조를 설계합니다.</p>
           </li>
         </ol>

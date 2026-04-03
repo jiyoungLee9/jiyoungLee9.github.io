@@ -83,13 +83,13 @@ $img_skills_op: "data:image/svg+xml,%3Csvg width='280' height='538' viewBox='0 0
 }
 @media (min-width:1025px) and (max-width:1439px) { 
     .page-skills {
-        background-position: calc(100% - 12.0rem) 28.0rem;
+        background-position: calc(100% - 12.0rem) 30.0rem;
         background-size:20.0rem auto;          
     }
 }
 @media (min-width:768px) and (max-width:1024px) {
     .page-skills {
-        background-position: calc(100% - 10.0rem) 28.0rem;
+        background-position: calc(100% - 6.0rem) 30.0rem;
         background-size:20.0rem auto;   
     }
 }
@@ -97,7 +97,7 @@ $img_skills_op: "data:image/svg+xml,%3Csvg width='280' height='538' viewBox='0 0
     .page-skills {
         background-image: url($img_skills_op);
         padding-bottom:30.0rem;
-        background-position: calc(100% - 6.0rem)  calc(100% - 6.0rem);
+        background-position: calc(100% - 6.0rem)  calc(100% + 6.0rem);
         background-size:20.0rem auto;  
     }
 }

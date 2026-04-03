@@ -111,18 +111,8 @@ $spacing-inline-gap:  $spacing-2;    // 인라인 요소 간격
 // -----------------------------------------------------------------------------
 
 // Container
-$container-max-width: 1280px;
-$container-padding-x: $spacing-12;   // 좌우 패딩
-
-// Grid
-$grid-columns:        12;
-$grid-gap:            $spacing-6;    // 컬럼 간격
-
-// Nav
-$nav-height:          60px;          // GNB 높이
-$nav-padding-x:       $spacing-8;
-$nav-gap:             $spacing-10;   // 메뉴 아이템 간격
-
+$container-min-width: 140.0rem;
+$container-padding-x: $spacing-6;   // 좌우 패딩 (기본)
 
 // -----------------------------------------------------------------------------
 // BORDER

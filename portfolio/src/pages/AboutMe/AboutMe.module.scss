@@ -53,7 +53,7 @@
     .tit {
         display: block;
         padding-top: $spacing-6;
-        border-top: $border-width solid $color-border; 
+        border-top: $border-width dashed $color-border; 
         font-family: $font-family-en;
         font-size: $font-size-base;
         font-weight: $font-weight-bold;
