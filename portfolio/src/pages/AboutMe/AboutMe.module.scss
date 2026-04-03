@@ -6,7 +6,7 @@
 // =============================================================================
 
 .main_about_me {
-    padding-right:30.0rem;
+    padding-right:60.0rem;
 }
 .heading {
     display:block;
@@ -44,8 +44,98 @@
     }
 }
 
+.box_info {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-top: $spacing-12;
+
+    .tit {
+        display: block;
+        padding-top: $spacing-6;
+        border-top: $border-width solid $color-border; 
+        font-family: $font-family-en;
+        font-size: $font-size-base;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-base;
+        color: $color-gray-900;
+    }
+    
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap:$spacing-8 0;
+        margin-top:$spacing-8;
+        padding-left:$spacing-6;
+
+        li {
+            display:flex;
+            flex-direction:column;
+            gap:$spacing-2 0;
+        }
+
+        .item_tit {
+            font-family:$font-family-base;
+            font-size:$font-size-base;
+            font-weight:$font-weight-bold;
+            line-height:$line-height-base;
+            color:$color-primary;
+        }
+
+        .item_desc {
+            font-family:$font-family-base;
+            font-size:$font-size-base;
+            font-weight:$font-weight-regular;
+            line-height:$line-height-loose;
+            color:$color-gray-700;
+        }
+    }
+}
+
 // 반응형 정의
-@media (min-width:1440px) { /* pc wide */ }
-@media (min-width:1025px) and (max-width:1439px) { /* pc */ }
-@media (min-width:768px) and (max-width:1024px) { /* tablet */ }
-@media (max-width:767px) { /* mobile */ }
+/* pc */ 
+@media (min-width:1025px) and (max-width:1439px) {     
+    .main_about_me {
+        padding-right:30.0rem;
+    }
+}
+
+/* tablet */ 
+@media (min-width:768px) and (max-width:1024px) { 
+    .main_about_me {
+        padding-right:20.0rem;
+    }    
+}
+
+/* mobile */
+@media (max-width:767px) { 
+    .main_about_me {
+        padding-right:0;
+    }
+
+    .page_main_title {
+        margin-top:$spacing-8;
+        .tit_info {
+             margin-top:$spacing-4;
+        }
+    }    
+
+    .box_info {
+        .tit {
+            font-size: $font-size-md;
+        }
+        
+        .list {
+            padding-left:0;
+            margin-top:$spacing-2;
+
+            .item_tit {
+                font-size: $font-size-md;
+            }
+
+            .item_desc {
+                font-size: $font-size-md;
+            }
+        }
+    }    
+}

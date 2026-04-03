@@ -130,6 +130,7 @@ $m_ico_close : "data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36
 @media (max-width:767px) {
     .header {
         background-color:$color-gray-100;
+        flex:0 0 8.6rem;
         height:8.6rem;        
 
         .gnb {

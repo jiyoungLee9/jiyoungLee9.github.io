@@ -26,7 +26,11 @@
 @media (max-width:767px) {/* mobile 이하 */ 
     .wrap {
         padding:0;
-    }    
+    }
+    .main {
+        padding-left:2.4rem;
+        padding-right:2.4rem;
+    }
 }
 
 .main {

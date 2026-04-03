@@ -44,7 +44,23 @@
 }
 
 // 반응형 정의
-@media (min-width:1440px) { /* pc wide */ }
-@media (min-width:1025px) and (max-width:1439px) { /* pc */ }
-@media (min-width:768px) and (max-width:1024px) { /* tablet */ }
-@media (max-width:767px) { /* mobile */ }
+/* pc */
+@media (min-width:1025px) and (max-width:1439px) { 
+    .main_resume {
+        padding-right:30.0rem;
+    }    
+}
+
+/* tablet */ 
+@media (min-width:768px) and (max-width:1024px) { 
+    .main_resume {
+        padding-right:10.0rem;
+    }    
+}
+
+/* mobile */
+@media (max-width:767px) {
+    .main_resume {
+        padding-right:0;
+    }     
+}
