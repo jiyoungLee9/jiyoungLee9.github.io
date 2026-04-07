@@ -13,6 +13,29 @@
     color:$color-gray-500;
 }
 
+/* pc wide */
+@media (min-width:1440px) { 
+    .footer {
+        padding-left:$container-padding-x;
+        padding-right:$container-padding-x;        
+    }
+}
+/* pc */
+@media (min-width:1025px) and (max-width:1439px) {
+    .footer {
+        padding-left:$container-padding-x;
+        padding-right:$container-padding-x;        
+    }
+}
+
+/* tablet */
+@media (min-width:768px) and (max-width:1024px) {
+    .footer {
+        padding-left:$container-padding-x;
+        padding-right:$container-padding-x;        
+    }    
+}
+
 /* mobile */
 @media (max-width:767px) {
     .footer {

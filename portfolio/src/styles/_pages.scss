@@ -65,7 +65,6 @@ $img_about_me_op : "data:image/svg+xml,%3Csvg width='388' height='575' viewBox='
 @media (max-width:767px) {
     .page-about-me {
         background-image: url($img_about_me_op);
-        padding-bottom:30.0rem;
         background-position: calc(100% - 4.0rem) calc(100% - 6.0rem);
         background-size:24.0rem auto;
     }
@@ -96,7 +95,6 @@ $img_skills_op: "data:image/svg+xml,%3Csvg width='280' height='538' viewBox='0 0
 @media (max-width:767px) {
     .page-skills {
         background-image: url($img_skills_op);
-        padding-bottom:30.0rem;
         background-position: calc(100% - 6.0rem)  calc(100% + 6.0rem);
         background-size:20.0rem auto;  
     }
@@ -126,7 +124,6 @@ $img_works_op:"data:image/svg+xml,%3Csvg width='259' height='575' viewBox='0 0 2
 @media (max-width:767px) {
     .page-works {
         background-image: url($img_works_op);
-        padding-bottom:30.0rem;
         background-position: calc(100% - 6.0rem)  calc(100% - 6.0rem);
         background-size:20.0rem auto;  
     }
@@ -185,7 +182,6 @@ $img_resume_op:"data:image/svg+xml,%3Csvg width='410' height='478' viewBox='0 0 
 @media (max-width:767px) {
     .page-resume {
         background-image: url($img_resume_op);
-        padding-bottom:30.0rem;
         background-position: calc(100% - 6.0rem) calc(100% - 6.0rem);
         background-size:26.0rem auto;  
     }

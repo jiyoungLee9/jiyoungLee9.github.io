@@ -10,23 +10,24 @@
 @media (min-width:1440px) { /* pc wide */ 
     .wrap {
         min-width:$container-min-width;
-        padding-left:$container-padding-x;
-        padding-right:$container-padding-x;
         margin:0 auto;
     }
+    .main {
+        padding-left:$container-padding-x;
+        padding-right:$container-padding-x;
+    }    
 }
 @media (max-width:1439px) {/* pc wide 이하 */     
     .wrap {
+        margin:0 auto;
+    }    
+    .main {
         padding-left:$container-padding-x;
         padding-right:$container-padding-x;
-        margin:0 auto;
     }    
 }
 
 @media (max-width:767px) {/* mobile 이하 */ 
-    .wrap {
-        padding:0;
-    }
     .main {
         padding-left:$container-padding-x;
         padding-right:$container-padding-x;
