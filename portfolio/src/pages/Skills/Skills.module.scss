@@ -161,6 +161,19 @@
 }
 
 // 반응형 정의
+ /* pc wide */ 
+@media (min-width:1440px) {
+    .skills_description {    
+        .list {
+            .item_tit {
+                flex: 0 0 20.0rem;
+            }
+            .item_desc {
+                flex: 0 0 calc(100% - 20.0rem);
+            }
+        }    
+    }      
+}
  /* pc */ 
 @media (min-width:1025px) and (max-width:1439px) {
     .main_skills {
@@ -168,7 +181,17 @@
     }
     .skills_box {
         gap:0 $spacing-2;
-    }    
+    }  
+    .skills_description {    
+        .list {
+            .item_tit {
+                flex: 0 0 20.0rem;
+            }
+            .item_desc {
+                flex: 0 0 calc(100% - 20.0rem);
+            }
+        }    
+    }      
 }
 
 /* tablet */

@@ -20,7 +20,7 @@
     justify-content: flex-start;    
     width:100%;
     margin-top:$spacing-6;
-    gap : 0 0.8rem;
+    gap : $spacing-4 0;
 
     & > * {
         font-family: $font-family-base;
@@ -66,7 +66,6 @@
         flex-direction: column;
         gap:$spacing-8 0;
         margin-top:$spacing-8;
-        padding-left:$spacing-6;
 
         li {
             display:flex;
