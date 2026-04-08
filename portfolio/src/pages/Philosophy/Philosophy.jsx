@@ -7,9 +7,13 @@ const Philosophy = () => {
     <section className={styles.main_philosophy}>
       <Title label="Philosophy" className={styles.heading} />
 
+      <div className={styles.page_main_title}>
+          <p className={styles.tit_strong}>일하는 방식은 결과물만큼 중요하다고 생각합니다.</p>
+      </div> 
+
       <div className={styles.box_philosophy}>
-        <h3 className={styles.box_sub_tit}>코드를 대하는 태도</h3>
-        <h4 className={styles.box_tit}>그 코드는 대부분 그만의 사정이 있다</h4>
+        <h4 className={styles.box_sub_tit}>코드를 대하는 태도</h4>
+        <h5 className={styles.box_tit}>그 코드는 대부분 그만의 사정이 있다</h5>
         <p className={styles.box_info}>
           새로운 프로젝트에 투입될 때 가장 먼저 하는 일은 기존 코드를 읽는 것입니다. <br />
           오래된 코드라도 함부로 걷어내기보다, 왜 그렇게 작성됐는지를 먼저 이해하려 합니다. <br />
@@ -18,8 +22,8 @@ const Philosophy = () => {
       </div>
 
       <div className={styles.box_philosophy}>
-        <h3 className={styles.box_sub_tit}>협업을 대하는 태도</h3>
-        <h4 className={styles.box_tit}>많은 사람이 모여서 만들어낸다, 그래서 내 것이 아닌 것이 없다</h4>
+        <h4 className={styles.box_sub_tit}>협업을 대하는 태도</h4>
+        <h5 className={styles.box_tit}>많은 사람이 모여서 만들어낸다, 그래서 내 것이 아닌 것이 없다</h5>
         <p className={styles.box_info}>
           UI는 혼자 완성되지 않습니다. <br />
           기획자의 의도, 디자이너의 결정, 개발자의 구조 위에서 제 작업이 완성됩니다. 그렇기에 소통을 줄이는 것이 아니라 늘리는 쪽을 선택해왔습니다. 동시에 함께 만든 결과물이라도 내가 맡은 부분은 끝까지 내 책임이라고 생각합니다. <br />
@@ -28,8 +32,8 @@ const Philosophy = () => {
       </div>
 
       <div className={styles.box_philosophy}>
-        <h3 className={styles.box_sub_tit}>새로운 서비스를 대하는 태도</h3>
-        <h4 className={styles.box_tit}>기승전결, 처음부터 끝까지 UI를 책임진다</h4>
+        <h4 className={styles.box_sub_tit}>새로운 서비스를 대하는 태도</h4>
+        <h5 className={styles.box_tit}>기승전결, 처음부터 끝까지 UI를 책임진다</h5>
         <p className={styles.box_info}>
           새로운 서비스를 구축할 때 저는 퍼블리싱 단계에서만 합류하는 방식을 선호하지 않습니다. <br />
           고객의 요구사항이 검토되는 시점부터 UX 설계 과정에 관심을 갖고 협업에 참여합니다. <br />
@@ -39,8 +43,8 @@ const Philosophy = () => {
       </div>
 
       <div className={styles.box_philosophy}>
-        <h3 className={styles.box_sub_tit}>변화를 대하는 태도</h3>
-        <h4 className={styles.box_tit}>기술은 언제나 새로울 수 밖에 없다</h4>
+        <h4 className={styles.box_sub_tit}>변화를 대하는 태도</h4>
+        <h5 className={styles.box_tit}>기술은 언제나 새로울 수 밖에 없다</h5>
         <p className={styles.box_info}>
           20년을 일하면서 기술 환경은 늘 바뀌었습니다. <br />
           그때마다 저항보다는 먼저 써보는 쪽을 택했고, 최근에는 LLM을 학습 도구로 활용해 React 환경을 직접 구축해봤습니다. <br />

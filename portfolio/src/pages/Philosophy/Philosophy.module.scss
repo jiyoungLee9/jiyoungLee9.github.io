@@ -14,13 +14,34 @@
     margin-top:2.0rem;
 }
 
+.page_main_title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;    
+    width:100%;
+    margin-top:$spacing-6;
+    gap : $spacing-4 0;
+
+    & > * {
+        font-family: $font-family-base;
+    }
+
+    .tit_strong {
+        font-size: $font-size-xl;
+        line-height: $line-height-tight;
+        font-weight: $font-weight-bold;
+        color:$color-gray-900;
+    }
+}
+
 .box_philosophy {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-start;
-    padding-top:$spacing-6;
-    gap:$spacing-2 0;
+    padding-top:$spacing-8;
+    gap:$spacing-4 0;
     > * {
         font-family:$font-family-base;
         line-height: $line-height-base;
@@ -30,8 +51,8 @@
         display: inline-flex;
         flex-direction: row;
         font-size: $font-size-xl;
-        font-weight: $font-weight-regular;        
-        color:$color-highlight;
+        font-weight: $font-weight-bold;
+        color:$color-primary;
         &::before,
         &::after {
             display: inline-block;            
@@ -39,7 +60,7 @@
             font-size: $font-size-xl;
             line-height:1.2;
             font-weight: bold;
-            color:$color-highlight;
+            color:$color-primary;
         }
         &::before {
             content:"\201C";
@@ -52,23 +73,18 @@
     }
     .box_sub_tit {
         display: block;
-        width:100%;     
+        width:100%;
+        padding-top: $spacing-8;  
         font-size: $font-size-base;
         font-weight: $font-weight-bold;
         color:$color-gray-900;
+        border-top: $border-width dashed $color-border;
     }
     .box_info {
         font-size: $font-size-base;
         color:$color-gray-900;
         word-break: keep-all;
         word-wrap: break-word;
-    }
-
-    & + .box_philosophy {
-        .box_sub_tit {        
-            padding-top: $spacing-6;
-            border-top: $border-width dashed $color-border;                
-        }
     }
 }
 
@@ -94,23 +110,24 @@
         padding-right:0;
     }
 
-.box_philosophy {
-    padding-top:$spacing-8;
-    .box_tit {
-        line-height: $line-height-tight;
-    }
-    .box_sub_tit {  
-        font-size: $font-size-md;
-    }
-    .box_info {
-        font-size: $font-size-md;
-    }
-
-    & + .box_philosophy {
-        .box_sub_tit {        
-            padding-top: $spacing-8;
+    .page_main_title {
+        margin-top:$spacing-8;
+        .tit_info {
+             margin-top:$spacing-4;
         }
-    }    
-}
+    }        
+
+    .box_philosophy {
+        padding-top:$spacing-10;
+        .box_tit {
+            line-height: $line-height-tight;
+        }
+        .box_sub_tit {  
+            font-size: $font-size-md;
+        }
+        .box_info {
+            font-size: $font-size-md;
+        }    
+    }
 
 }

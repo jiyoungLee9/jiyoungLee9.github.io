@@ -12,7 +12,7 @@ const AboutMe = () => {
       <Title label="About Me" className={styles.heading} />
 
       <div className={styles.page_main_title}>
-          <p className={styles.tit_strong}>20년의 마크업 통찰, React의 구조적 설계로 깊이를 더하다.</p>
+          <p className={styles.tit_strong}>20년의 마크업 통찰, React의 구조적 설계로 깊이를 더합니다.</p>
           <p className={styles.tit_info}>
             20년 차 UI 웹 퍼블리셔로서, 수많은 프로젝트의 중심에서 디자인과 개발을 잇는 가교 역할을 해왔습니다. <br />
             기술의 변화 속에서도 변하지 않는 <strong>UI의 본질을 탐구</strong>하며, 이제는 그 깊이를 <strong>React 기반의 컴포넌트 아키텍처로 확장</strong>하고 있습니다.

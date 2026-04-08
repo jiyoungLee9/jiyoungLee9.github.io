@@ -6,7 +6,7 @@
 // =============================================================================
 
 .main_works {
-
+    padding-right:60.0rem;
 }
 
 .heading {
@@ -14,8 +14,184 @@
     margin-top:2.0rem;
 }
 
+.page_main_title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;    
+    width:100%;
+    margin-top:$spacing-6;
+    gap : $spacing-4 0;
+
+    & > * {
+        font-family: $font-family-base;
+    }
+
+    .tit_strong {
+        font-size: $font-size-xl;
+        line-height: $line-height-tight;
+        font-weight: $font-weight-bold;
+        color:$color-gray-900;
+    }
+}
+
+.notice_msg {
+    display: block;
+    width:100%;
+    margin-top:$spacing-4;
+    margin-bottom:$spacing-4;
+    text-align: right;
+    font-family:$font-family-base;
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-base;
+    color:$color-gray-700;    
+}
+
+.work_box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;    
+    width:100%;
+    padding:$spacing-8;
+    margin-top:$spacing-8;
+    gap:$spacing-4 0;
+    border:$border-width solid $color-border;
+    border-radius: $border-radius-lg;
+    background-color:rgba(255, 248, 248, 0.64);
+
+    .work_title {
+        display: block;
+        width:100%;
+        font-family:$font-family-base;
+        font-size: $font-size-xl;
+        font-weight: $font-weight-bold;        
+        line-height: $line-height-base;
+        color:$color-primary;        
+    }
+    .work_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;    
+        width:100%;
+        gap:$spacing-2 0;
+
+        & > * {
+            font-family: $font-family-base;
+            font-size: $font-size-base;
+            line-height: $line-height-base;
+            color: $color-gray-900;               
+        }
+        & .tit {
+            flex: 0 0 8.0rem;
+            font-weight: $font-weight-regular;
+        }
+        & .value {
+            flex: 0 0 calc(100% - 8.0rem);
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding-left:$spacing-2;
+            font-weight: $font-weight-bold;
+            gap:0 $spacing-1;
+        }        
+    }
+    .work_message {
+        width:100%;
+        font-family:$font-family-base;
+        font-size: $font-size-md;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-base;
+        color:$color-primary;
+    }
+    .work_experience {
+        width:100%;
+        font-family:$font-family-base;
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+        color:$color-gray-900;
+        word-break: keep-all;
+        word-wrap: break-word;
+        & > P {
+            margin-top:$spacing-2;
+        }        
+    }
+}
+
+.badge_stack {
+    display: inline-flex;
+    padding:0 $spacing-2;
+    width:auto;
+    height:auto;
+    margin-top:$spacing-1;
+    margin-bottom:$spacing-1;
+    font-family: $font-family-base;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-base;
+    color: $color-gray-700;
+    background-color: $color-white;
+    border:0.1rem solid $color-red-700;
+    border-radius: $border-radius-full;
+}
+
+.link {
+    display: inline-block;
+    font-family: $font-family-base;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-base;
+    color: $color-red-900;
+    text-decoration: underline; 
+    &:hover,       
+    &:link {
+        text-decoration: underline; 
+    }
+}
+
 // 반응형 정의
-@media (min-width:1440px) { /* pc wide */ }
-@media (min-width:1025px) and (max-width:1439px) { /* pc */ }
-@media (min-width:768px) and (max-width:1024px) { /* tablet */ }
-@media (max-width:767px) { /* mobile */ }
+/* pc */ 
+@media (min-width:1025px) and (max-width:1439px) {     
+    .main_works {
+        padding-right:30.0rem;
+    }
+}
+
+/* tablet */ 
+@media (min-width:768px) and (max-width:1024px) { 
+    .main_works {
+        padding-right:20.0rem;
+    }    
+}
+
+/* mobile */
+@media (max-width:767px) { 
+    .main_works {
+        padding-right:0;
+    }
+
+    .page_main_title {
+        margin-top:$spacing-8;
+        .tit_info {
+             margin-top:$spacing-4;
+        }
+    }
+    
+    .work_box {
+        padding:$spacing-4;
+        margin-top:$spacing-4;        
+        .work_experience {
+            font-size: $font-size-md;
+            & > P {
+                margin-top:$spacing-4;
+            }        
+        }        
+    }
+
+    .link {
+        font-size: $font-size-base;
+    }    
+}

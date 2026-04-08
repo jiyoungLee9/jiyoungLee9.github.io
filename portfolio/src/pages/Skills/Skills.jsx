@@ -8,7 +8,7 @@ const Skills = () => {
       <Title label="Skills & Expertise" className={styles.heading} />
 
       <div className={styles.page_main_title}>
-          <p className={styles.tit_strong}>어떤 환경에서도 UI의 완성도와 구조를 함께 책임집니다</p>
+          <p className={styles.tit_strong}>어떤 환경에서도 UI의 완성도와 구조를 함께 책임집니다.</p>
       </div>
 
       <div className={styles.skills_box}>
