@@ -6,7 +6,7 @@
 // =============================================================================
 
 .main_philosophy {
-
+    padding-right:60.0rem;
 }
 
 .heading {
@@ -14,8 +14,103 @@
     margin-top:2.0rem;
 }
 
+.box_philosophy {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding-top:$spacing-6;
+    gap:$spacing-2 0;
+    > * {
+        font-family:$font-family-base;
+        line-height: $line-height-base;
+    }
+    .box_tit {
+        position: relative;
+        display: inline-flex;
+        flex-direction: row;
+        font-size: $font-size-xl;
+        font-weight: $font-weight-regular;        
+        color:$color-highlight;
+        &::before,
+        &::after {
+            display: inline-block;            
+            font-family: serif;
+            font-size: $font-size-xl;
+            line-height:1.2;
+            font-weight: bold;
+            color:$color-highlight;
+        }
+        &::before {
+            content:"\201C";
+            margin-right:$spacing-1;
+        }
+        &::after {
+            content:"\201D";
+           margin-left:$spacing-1;
+        }        
+    }
+    .box_sub_tit {
+        display: block;
+        width:100%;     
+        font-size: $font-size-base;
+        font-weight: $font-weight-bold;
+        color:$color-gray-900;
+    }
+    .box_info {
+        font-size: $font-size-base;
+        color:$color-gray-900;
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+
+    & + .box_philosophy {
+        .box_sub_tit {        
+            padding-top: $spacing-6;
+            border-top: $border-width dashed $color-border;                
+        }
+    }
+}
+
+
 // 반응형 정의
-@media (min-width:1440px) { /* pc wide */ }
-@media (min-width:1025px) and (max-width:1439px) { /* pc */ }
-@media (min-width:768px) and (max-width:1024px) { /* tablet */ }
-@media (max-width:767px) { /* mobile */ }
+/* pc */ 
+@media (min-width:1025px) and (max-width:1439px) {     
+    .main_philosophy {
+        padding-right:30.0rem;
+    }
+}
+
+/* tablet */ 
+@media (min-width:768px) and (max-width:1024px) { 
+    .main_philosophy {
+        padding-right:20.0rem;
+    }    
+}
+
+/* mobile */
+@media (max-width:767px) { 
+    .main_philosophy {
+        padding-right:0;
+    }
+
+.box_philosophy {
+    padding-top:$spacing-8;
+    .box_tit {
+        line-height: $line-height-tight;
+    }
+    .box_sub_tit {  
+        font-size: $font-size-md;
+    }
+    .box_info {
+        font-size: $font-size-md;
+    }
+
+    & + .box_philosophy {
+        .box_sub_tit {        
+            padding-top: $spacing-8;
+        }
+    }    
+}
+
+}
