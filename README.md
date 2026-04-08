@@ -3,7 +3,7 @@
 Portfolio & Learning record log<br /><br />
 
 ## Portfolio <br />
-(작업중)<br /><br />
+https://jiyounglee9.github.io/<br /><br />
 
 ## React UI Component<br />
 https://github.com/jiyoungLee9/my-first-react <br />
