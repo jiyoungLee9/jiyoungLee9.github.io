@@ -62,5 +62,10 @@
 @media (max-width:767px) {
     .main_resume {
         padding-right:0;
-    }     
+    }
+    .btn_group {
+        flex-direction: column;
+        align-items: stretch;
+        gap:1.6rem 0;
+    }
 }

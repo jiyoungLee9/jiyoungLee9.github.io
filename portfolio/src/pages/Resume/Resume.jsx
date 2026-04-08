@@ -20,6 +20,13 @@ const Resume = () => {
                 href="/assets/pdf/career-description_2026Jiyounglee.pdf"
                 download="career-description_2026Jiyounglee.pdf"
             />
+            <Button
+                label="Portfolio (pdf) download"
+                icon="download"
+                as="a"
+                href="/assets/pdf/leejiyoung_portfolio_2026.pdf"
+                download="leejiyoung_portfolio_2026.pdf"
+            />
         </div>
     </section>
     )
