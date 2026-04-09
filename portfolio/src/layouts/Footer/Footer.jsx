@@ -2,7 +2,7 @@ import styles from './Footer.module.scss'
 
 const Footer = () => {
 
-  const email = "jadelee.project@gmail.com";
+  const email = "jet052@naver.com";
 
   return (
     <footer className={styles.footer}>
