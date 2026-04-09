@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import styles from './Header.module.scss'
 
-const SITE_NAME = 'Jiyoung Lee'
+const SITE_NAME = 'Jiyoung Lee Portfolio'
 
 const NAV_ITEMS = [
   { label: 'Home',             path: '/' },
