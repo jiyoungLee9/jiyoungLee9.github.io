@@ -27,7 +27,9 @@ const Works = () => {
             <span className={styles.badge_stack}>CSS</span>
             <span className={styles.badge_stack}>JavaScript</span>
             <span className={styles.badge_stack}>jQuery</span>
+            <span className={styles.badge_stack}>Figma</span>
             <span className={styles.badge_stack}>WebView</span>
+            <span className={styles.badge_stack}>CMS</span>
             <span className={styles.badge_stack}>웹접근성(인증획득)</span>
             <span className={styles.badge_stack}>앱접근성(인증획득)</span>
           </dd>
@@ -52,13 +54,16 @@ const Works = () => {
           <dt className={styles.tit}>기술</dt>
           <dd className={styles.value}>
             <span className={styles.badge_stack}>UX설계</span>
-            <span className={styles.badge_stack}>UI디자인</span>
             <span className={styles.badge_stack}>HTML</span>
-            <span className={styles.badge_stack}>CSS</span>
+            <span className={styles.badge_stack}>CSS</span>            
             <span className={styles.badge_stack}>JavaScript</span>
-            <span className={styles.badge_stack}>jQuery</span>
+            <span className={styles.badge_stack}>jQuery</span>            
             <span className={styles.badge_stack}>Chart.js</span>
             <span className={styles.badge_stack}>반응형웹</span>
+            <span className={styles.badge_stack}>Google Analytics</span>
+            <span className={styles.badge_stack}>Adobe Ps</span>
+            <span className={styles.badge_stack}>Adobe Ai</span>
+            <span className={styles.badge_stack}>웹접근성(인증획득)</span>
           </dd>
         </dl>
         <h5 className={styles.work_message}>매주 바뀌는 상황 속에서, UI도 함께 진화했습니다.</h5>
@@ -82,6 +87,7 @@ const Works = () => {
             <span className={styles.badge_stack}>HTML</span>
             <span className={styles.badge_stack}>CSS</span>
             <span className={styles.badge_stack}>SCSS</span>
+            <span className={styles.badge_stack}>Zeplin</span>
             <span className={styles.badge_stack}>JavaScript</span>
             <span className={styles.badge_stack}>jQuery</span>
             <span className={styles.badge_stack}>AUIGrid</span>
@@ -134,10 +140,11 @@ const Works = () => {
           <dt className={styles.tit}>역할</dt>
           <dd className={styles.value}>UI디자인 / UI퍼블리셔</dd>
           <dt className={styles.tit}>기술</dt>
-          <dd className={styles.value}>
-            <span className={styles.badge_stack}>UI디자인</span>
+          <dd className={styles.value}>            
             <span className={styles.badge_stack}>HTML</span>
             <span className={styles.badge_stack}>CSS</span>
+            <span className={styles.badge_stack}>Adobe Ps</span>
+            <span className={styles.badge_stack}>Adobe Ai</span>
             <span className={styles.badge_stack}>WebSquare</span>
             <span className={styles.badge_stack}>JavaScript</span>
             <span className={styles.badge_stack}>jQuery</span>
@@ -162,7 +169,6 @@ const Works = () => {
           <dd className={styles.value}>1인 구축</dd>
           <dt className={styles.tit}>기술</dt>
           <dd className={styles.value}>
-            <span className={styles.badge_stack}>UI디자인</span>
             <span className={styles.badge_stack}>HTML</span>
             <span className={styles.badge_stack}>CSS</span>
             <span className={styles.badge_stack}>SCSS</span>
@@ -170,6 +176,7 @@ const Works = () => {
             <span className={styles.badge_stack}>React</span>
             <span className={styles.badge_stack}>Vite</span>
             <span className={styles.badge_stack}>Storybook</span>
+            <span className={styles.badge_stack}>Figma</span>
             <span className={styles.badge_stack}>Design Token</span>
             <span className={styles.badge_stack}>LLM 활용 학습</span>
           </dd>
