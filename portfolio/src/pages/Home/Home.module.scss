@@ -116,34 +116,36 @@
 /* mobile */
 @media (max-width:767px) {
     .main_home {
-        margin-top:16.0rem;
-        padding-left:$spacing-10;
-        padding-right:$spacing-16;
+        margin-top:4.0rem;
+        padding-left:$spacing-8;
+        padding-right:$spacing-8;
     }
     .heading_msg {    
         span {
-            font-size:5.2rem;
+            font-size:6.4rem;
         }
         &::after {
             background-size: auto 4.6rem;
         }
     }
     .heading_sub_msg {
-        margin-top:0.6rem;
+        margin-top:$spacing-4;
         font-size:$font-size-2xl;
         word-break: keep-all;
         word-wrap: break-word;
         white-space: pre-line;
     }
     .heading_info_text {
-        font-size:$font-size-lg;
+        margin-top:$spacing-4;
+        font-size:$font-size-md;
         word-break: keep-all;
         word-wrap: break-word;
          white-space: pre-line;
     }
     .hero_point {
         margin-top:2.4rem;
-        font-size:$font-size-lg;
+        font-size:$font-size-xl;
+        line-height: $line-height-base;
         word-break: keep-all;
         word-wrap: break-word;
         white-space: pre-line;
