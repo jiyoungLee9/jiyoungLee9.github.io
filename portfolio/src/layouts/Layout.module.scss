@@ -28,9 +28,10 @@
 }
 
 @media (max-width:767px) {/* mobile 이하 */ 
-    .main {
+    .main {        
         padding-left:$container-padding-x;
         padding-right:$container-padding-x;
+        padding-bottom:$container-padding-x;
     }
 }
 
