@@ -74,6 +74,41 @@ const Works = () => {
       </div>
 
       <div className={styles.work_box}>        
+        <h4 className={styles.work_title}>React UI Component 구축</h4>
+        <dl className={styles.work_info}>
+          <dt className={styles.tit}>수행년도</dt>
+          <dd className={styles.value}>2026.01 - 2026.03</dd>
+          <dt className={styles.tit}>분류</dt>
+          <dd className={styles.value}>개인</dd>
+          <dt className={styles.tit}>역할</dt>
+          <dd className={styles.value}>1인 구축</dd>
+          <dt className={styles.tit}>기술</dt>
+          <dd className={styles.value}>
+            <span className={styles.badge_stack}>HTML</span>
+            <span className={styles.badge_stack}>CSS</span>
+            <span className={styles.badge_stack}>SCSS</span>
+            <span className={styles.badge_stack}>JavaScript</span>
+            <span className={styles.badge_stack}>React</span>
+            <span className={styles.badge_stack}>Vite</span>
+            <span className={styles.badge_stack}>Storybook</span>
+            <span className={styles.badge_stack}>Figma</span>
+            <span className={styles.badge_stack}>Design Token</span>
+            <span className={styles.badge_stack}>LLM 활용 학습</span>
+          </dd>
+        </dl>
+        <h5 className={styles.work_message}>배우기로 했다면, 실제로 돌아가는 것을 만들어야 했습니다.</h5>
+        <div className={styles.work_experience}>
+          <p>React를 배우고 싶다는 생각은 있었지만, 단순히 튜토리얼을 따라가는 방식은 선택하지 않았습니다. <br />LLM을 통해 나의 현재 수준과 목적에 맞는 로드맵을 먼저 설계하고, 범위와 결과물을 정의한 뒤 시작했습니다. <br />배움의 도구로 AI를 쓰는 것이 실제로 효과적인지를 직접 확인해보고 싶었습니다.</p>
+          <p>Gemini로 로드맵을 짜고, Claude를 메인으로 코드 작성과 학습을 병행했습니다. <br />스타일은 Tailwind 같은 유틸리티 라이브러리 대신 SCSS Modules로 직접 선언하며 브라우저 렌더링을 눈으로 확인하는 방식을 택했습니다. 레거시(JSP/jQuery)와 비교하며 컴포넌트의 역할과 범위, 프론트엔드 개발자와의 소통 방식을 이해하는 데 집중했고, View 역할에 충실한 Props 설계와 Storybook을 통한 명세 문서화까지 완성했습니다. <br />Design Token 연동, useState·useEffect·createPortal 등 필요한 Hook 활용, Grid 기반 페이지 예시까지 포함해 실무에서 쓸 수 있는 수준을 목표로 삼았습니다.</p>
+          <p>책이나 강의가 아닌 AI와 함께 계획하고 실행하는 방식은 생각보다 효과적이었습니다. <br />막히는 지점마다 맥락을 이해한 답변을 받을 수 있었고, 레거시에서 Modern으로 전환되는 프로젝트에서 UIUX 담당자가 어떤 지점을 준비해야 하는지를 직접 체감하며 그릴 수 있었습니다.</p>
+          <p>
+            - <a className={styles.link} href="https://jylee9-react-uicomponent.netlify.app/?path=/docs/design-system-colors--docs" target='_blank' title="새창">Component Storybook  바로가기</a><br />
+            - <a className={styles.link} href="https://jiyounglee9.github.io/react_learning_log/" target='_blank' title="새창">학습기록일지 바로가기</a>
+          </p>
+        </div>
+      </div>      
+
+      <div className={styles.work_box}>        
         <h4 className={styles.work_title}>CJ올리브네트웍스 원오더 오채널 / mPOS / BackOffice 구축</h4>
         <dl className={styles.work_info}>
           <dt className={styles.tit}>수행년도</dt>
@@ -158,40 +193,7 @@ const Works = () => {
         </div>
       </div>
 
-      <div className={styles.work_box}>        
-        <h4 className={styles.work_title}>React UI Component 구축</h4>
-        <dl className={styles.work_info}>
-          <dt className={styles.tit}>수행년도</dt>
-          <dd className={styles.value}>2026.01 - 2026.03</dd>
-          <dt className={styles.tit}>분류</dt>
-          <dd className={styles.value}>개인</dd>
-          <dt className={styles.tit}>역할</dt>
-          <dd className={styles.value}>1인 구축</dd>
-          <dt className={styles.tit}>기술</dt>
-          <dd className={styles.value}>
-            <span className={styles.badge_stack}>HTML</span>
-            <span className={styles.badge_stack}>CSS</span>
-            <span className={styles.badge_stack}>SCSS</span>
-            <span className={styles.badge_stack}>JavaScript</span>
-            <span className={styles.badge_stack}>React</span>
-            <span className={styles.badge_stack}>Vite</span>
-            <span className={styles.badge_stack}>Storybook</span>
-            <span className={styles.badge_stack}>Figma</span>
-            <span className={styles.badge_stack}>Design Token</span>
-            <span className={styles.badge_stack}>LLM 활용 학습</span>
-          </dd>
-        </dl>
-        <h5 className={styles.work_message}>배우기로 했다면, 실제로 돌아가는 것을 만들어야 했습니다.</h5>
-        <div className={styles.work_experience}>
-          <p>React를 배우고 싶다는 생각은 있었지만, 단순히 튜토리얼을 따라가는 방식은 선택하지 않았습니다. <br />LLM을 통해 나의 현재 수준과 목적에 맞는 로드맵을 먼저 설계하고, 범위와 결과물을 정의한 뒤 시작했습니다. <br />배움의 도구로 AI를 쓰는 것이 실제로 효과적인지를 직접 확인해보고 싶었습니다.</p>
-          <p>Gemini로 로드맵을 짜고, Claude를 메인으로 코드 작성과 학습을 병행했습니다. <br />스타일은 Tailwind 같은 유틸리티 라이브러리 대신 SCSS Modules로 직접 선언하며 브라우저 렌더링을 눈으로 확인하는 방식을 택했습니다. 레거시(JSP/jQuery)와 비교하며 컴포넌트의 역할과 범위, 프론트엔드 개발자와의 소통 방식을 이해하는 데 집중했고, View 역할에 충실한 Props 설계와 Storybook을 통한 명세 문서화까지 완성했습니다. <br />Design Token 연동, useState·useEffect·createPortal 등 필요한 Hook 활용, Grid 기반 페이지 예시까지 포함해 실무에서 쓸 수 있는 수준을 목표로 삼았습니다.</p>
-          <p>책이나 강의가 아닌 AI와 함께 계획하고 실행하는 방식은 생각보다 효과적이었습니다. <br />막히는 지점마다 맥락을 이해한 답변을 받을 수 있었고, 레거시에서 Modern으로 전환되는 프로젝트에서 UIUX 담당자가 어떤 지점을 준비해야 하는지를 직접 체감하며 그릴 수 있었습니다.</p>
-          <p>
-            - <a className={styles.link} href="https://jylee9-react-uicomponent.netlify.app/?path=/docs/design-system-colors--docs" target='_blank' title="새창">Component Storybook  바로가기</a><br />
-            - <a className={styles.link} href="https://jiyounglee9.github.io/react_learning_log/" target='_blank' title="새창">학습기록일지 바로가기</a>
-          </p>
-        </div>
-      </div>
+
 
       <p className={styles.notice_msg}>* 전체 작업목록은 경력기술서를 참고해 주십시오.</p>      
 
