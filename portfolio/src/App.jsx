@@ -6,6 +6,13 @@ import Skills from './pages/Skills/Skills'
 import Works from './pages/Works/Works'
 import Philosophy from './pages/Philosophy/Philosophy'
 import Resume from './pages/Resume/Resume'
+import NotFound from './pages/NotFound/NotFound'
+
+// [개발 서버 전용] 공통 오류 페이지 확인용 — /__error-test 접속 시 강제로 오류 발생
+// import.meta.env.DEV 는 npm run dev 에서만 true → 배포 빌드에는 라우트가 생기지 않음
+const ErrorTest = () => {
+  throw new Error('공통 오류 페이지 확인용 테스트 오류')
+}
 
 function App() {
   return (
