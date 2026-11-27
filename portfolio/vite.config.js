@@ -12,9 +12,11 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
+        // Windows 절대경로(C:/...)는 Sass가 URL 스킴으로 해석해 못 찾으므로 loadPaths 사용
+        loadPaths: [path.resolve(__dirname, 'src/styles')],
         additionalData: [
-          `@use "${path.resolve(__dirname, 'src/styles/_font').replace(/\\/g, '/')}" as *;`,
-          `@use "${path.resolve(__dirname, 'src/styles/variables').replace(/\\/g, '/')}" as *;`,
+          `@use "font" as *;`,
+          `@use "variables" as *;`,
         ].join('\n')
       }
     }
