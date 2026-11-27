@@ -25,6 +25,8 @@ function App() {
           <Route path="works" element={<Works />} />
           <Route path="philosophy" element={<Philosophy />} />
           <Route path="resume" element={<Resume />} />
+          {import.meta.env.DEV && <Route path="__error-test" element={<ErrorTest />} />}
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
