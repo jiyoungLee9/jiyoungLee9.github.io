@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+// =============================================================================
+// src/pages/ErrorPage/ErrorPage.module.scss
+// 공통 오류 페이지 스타일 — NotFound 카드와 동일한 디자인 언어, header 없는 전체 화면
+// =============================================================================
+
+// header/footer 없이 화면 전체 사용 (body > .root 가 overflow:hidden 이므로 자체 스크롤)
+.main_error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: $spacing-12 $container-padding-x;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+// 카드
+.error_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 52.0rem;
+    padding: $spacing-12 $spacing-10 4.4rem;
+    box-sizing: border-box;
+    border: $border-width solid $color-red-500;
+    border-radius: 1.2rem;
+    background-color: $color-bg-card;
+    box-shadow: 0 1.2rem 3.2rem 0 rgba(15, 23, 41, 0.08);
+    font-family: $font-family-base;
+    text-align: center;
+}
+
+// "오류" 표기 (404 숫자 자리)
+.code {
+    font-size: 6.4rem;
+    font-weight: $font-weight-bold;
+    line-height: 6.4rem;
+    color: $color-primary;
+}
+
+// 제목
+.tit {
+    margin-top: $spacing-5;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    line-height: 2.8rem;
+    color: $color-text-primary;
+}
+
+// 안내 문구
+.info {
+    margin-top: 1.0rem;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-regular;
+    line-height: 2.2rem;
+    color: $color-gray-500;
+    word-break: keep-all;
+}
+
+// 버튼 영역 — 공통 Button(subType) 재사용
+.actions {
+    display: flex;
+    margin-top: $spacing-8;
+}
+
+// 공통 Button.module.scss 가 늦게 로드될 수 있어 .actions 로 우선순위 확보
+.actions .btn_primary {
+    min-width: 11.2rem;
+    background-color: $color-primary;
+    color: $color-white;
+
+    &:hover {
+        border-color: $color-accent;
+        background-color: $color-accent;
+    }
+}
+
+/* mobile */
+@media (max-width:767px) {
+    .error_card {
+        padding: $spacing-10 $spacing-6 $spacing-8;
+    }
+    .code {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+    }
+    .info br {
+        display: none;
+    }
+}
